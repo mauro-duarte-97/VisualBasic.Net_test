@@ -1,0 +1,8 @@
+C:\Users\Mauro\Desktop\Programacion\Visual Basic.NET\Tp0\Tp0\obj\Debug\net6.0-windows10.0.19041.0\Tp0.vbproj.AssemblyReference.cache
+C:\Users\Mauro\Desktop\Programacion\Visual Basic.NET\Tp0\Tp0\obj\Debug\net6.0-windows10.0.19041.0\Tp0.FrmInsertarCliente.resources
+C:\Users\Mauro\Desktop\Programacion\Visual Basic.NET\Tp0\Tp0\obj\Debug\net6.0-windows10.0.19041.0\Tp0.tp_prueba.resources
+C:\Users\Mauro\Desktop\Programacion\Visual Basic.NET\Tp0\Tp0\obj\Debug\net6.0-windows10.0.19041.0\Tp0.vbproj.GenerateResource.cache
+C:\Users\Mauro\Desktop\Programacion\Visual Basic.NET\Tp0\Tp0\obj\Debug\net6.0-windows10.0.19041.0\Tp0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mauro\Desktop\Programacion\Visual Basic.NET\Tp0\Tp0\obj\Debug\net6.0-windows10.0.19041.0\Tp0.AssemblyInfoInputs.cache
+C:\Users\Mauro\Desktop\Programacion\Visual Basic.NET\Tp0\Tp0\obj\Debug\net6.0-windows10.0.19041.0\Tp0.AssemblyInfo.vb
+C:\Users\Mauro\Desktop\Programacion\Visual Basic.NET\Tp0\Tp0\obj\Debug\net6.0-windows10.0.19041.0\Tp0.vbproj.CoreCompileInputs.cache
