@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mauro\\Desktop\\Programacion\\Visual Basic.NET\\Tp0\\Tp0\\Tp0.vbproj": {}
+    "C:\\Users\\daiana\\Desktop\\Proyectos\\VisualBasic.Net_test\\Tp0\\Tp0\\Tp0.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Mauro\\Desktop\\Programacion\\Visual Basic.NET\\Tp0\\Tp0\\Tp0.vbproj": {
+    "C:\\Users\\daiana\\Desktop\\Proyectos\\VisualBasic.Net_test\\Tp0\\Tp0\\Tp0.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mauro\\Desktop\\Programacion\\Visual Basic.NET\\Tp0\\Tp0\\Tp0.vbproj",
+        "projectUniqueName": "C:\\Users\\daiana\\Desktop\\Proyectos\\VisualBasic.Net_test\\Tp0\\Tp0\\Tp0.vbproj",
         "projectName": "Tp0",
-        "projectPath": "C:\\Users\\Mauro\\Desktop\\Programacion\\Visual Basic.NET\\Tp0\\Tp0\\Tp0.vbproj",
-        "packagesPath": "C:\\Users\\Mauro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mauro\\Desktop\\Programacion\\Visual Basic.NET\\Tp0\\Tp0\\obj\\",
+        "projectPath": "C:\\Users\\daiana\\Desktop\\Proyectos\\VisualBasic.Net_test\\Tp0\\Tp0\\Tp0.vbproj",
+        "packagesPath": "C:\\Users\\daiana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\daiana\\Desktop\\Proyectos\\VisualBasic.Net_test\\Tp0\\Tp0\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mauro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\daiana\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,13 +44,13 @@
         "net6.0-windows10.0.19041": {
           "targetAlias": "net6.0-windows10.0.19041.0",
           "dependencies": {
-            "Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms": {
+            "Confluent.Kafka": {
               "target": "Package",
-              "version": "[150.1358.0, )"
+              "version": "[2.0.2, )"
             },
-            "System.Data.OleDb": {
+            "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[4.8.5, )"
             }
           },
           "imports": [

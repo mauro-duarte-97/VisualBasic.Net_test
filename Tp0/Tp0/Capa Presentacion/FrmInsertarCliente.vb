@@ -2,28 +2,29 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnInsertarCliente.Click
 
         Try
-            Dim Lc As New LCliente()
+            If txtNombres.Text <> "" And txtTel.Text <> "" And txtCorreo.Text <> "" Then
+                Dim Lc As New LCliente()
 
-            Lc.insertarCliente(txtNombres.Text, txtNumId.Text, txtTel.Text)
+                Lc.insertarCliente(txtNombres.Text, txtTel.Text, txtCorreo.Text)
+                limpiarCampo()
+
+            Else
+                MsgBox("no se puede insertar el cliente por falta de datos")
+            End If
 
         Catch ex As Exception
 
             MsgBox(ex.Message)
-
         End Try
 
     End Sub
 
+    Public Sub limpiarCampo()
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtNombres.TextChanged
-
-    End Sub
-
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles txtNumId.TextChanged
-
-    End Sub
-
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles txtTel.TextChanged
+        txtNombres.Clear()
+        txtCorreo.Clear()
+        txtTel.Clear()
 
     End Sub
+
 End Class

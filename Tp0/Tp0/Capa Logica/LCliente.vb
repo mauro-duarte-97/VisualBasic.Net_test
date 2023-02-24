@@ -1,10 +1,10 @@
-﻿Imports System.Data.OleDb
+﻿Imports System.Data.SqlClient
 
 Public Class LCliente
 
-    Public Function insertarCliente(nom As String, nId As String, tel As String)
+    Public Function insertarCliente(cte As String, correo As String, tel As String)
 
-        Dim dc As New DCliente(nom, nId, tel)
+        Dim dc As New DCliente(cte, correo, tel)
 
         If dc.insertarCliente(dc) = True Then
 
@@ -17,5 +17,15 @@ Public Class LCliente
 
     End Function
 
+    Public Function consultarCliente(ID As String, cte As String, tel As String, corr As String) As DataTable
+        Try
+            Dim dc As New DCliente(cte, tel, corr)
+            Dim dt As DataTable = dc.consultarCliente(ID, cte, tel, corr)
+            Return dt
 
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        End Try
+    End Function
 End Class

@@ -1,62 +1,49 @@
 ﻿Imports System.Data.Sql
 Imports System.Data.SqlClient
-Imports Windows.Media.Protection.PlayReady
 
 Public Class DCliente
     Inherits Conexion
 
-    Private Id_Cliente As Integer
-    Private nombres As String
-    Private numId As String
+    Private cliente As String
+    Private correo As String
     Private telefono As String
-
     Private cmd As SqlCommand
+    Dim null As Nullable
+    Public Sub New(cte As String, corr As String, tel As String)
 
-    Public Sub New(nom As String, nId As String, tel As String)
-
-        nombres = nom
-        numId = nId
+        cliente = cte
+        correo = corr
         telefono = tel
 
     End Sub
 
     Public Sub New()
 
+
     End Sub
 
-    Public Property Id_Cliente As Integer
+    Public Property CCliente As String
 
         Get
-            Return IdCliente
-
-        End Get
-        Set(value As Integer)
-            IdCliente = value
-        End Set
-    End Property
-
-    Public Property NombresCliente As String
-
-        Get
-            Return nombres
+            Return cliente
         End Get
         Set(value As String)
-            nombres = value
+            cliente = value
         End Set
     End Property
 
-    Public Property NumIdCliente As String
+    Public Property CorreoCliente As String
 
         Get
-            Return numId
+            Return correo
 
         End Get
         Set(value As String)
-            numId = value
+            correo = value
         End Set
     End Property
 
-    Public Property TelefonoCliente As String
+    Public Property TelCliente As String
 
         Get
             Return telefono
@@ -67,20 +54,68 @@ Public Class DCliente
         End Set
     End Property
 
+    Public Function consultarCliente(ID As String, cte As String, tel As String, corr As String) As DataTable
+        'SE FILTRARA DE A 1 POR CONVENIENCIA DE CODIGO
+        MsgBox(ID & cte & tel & corr)
+
+        Try
+        conectar()
+            Dim sql As String
+            If ID <> 0 Then
+                sql = "SELECT * FROM dbo.clientes WHERE ID ='" & ID & "'"
+                cmd = New SqlCommand(sql, con)
+            End If
+
+            If cte <> " " Then
+                sql = "SELECT * FROM dbo.clientes WHERE Cliente ='" & cte & "'"
+                cmd = New SqlCommand(sql, con)
+            End If
+
+            If tel <> " " Then
+                sql = "SELECT * FROM dbo.clientes WHERE Telefono ='" & tel & "'"
+                cmd = New SqlCommand(sql, con)
+            End If
+
+            If corr <> " " Then
+                sql = "SELECT * FROM dbo.clientes WHERE Correo ='" & corr & "'"
+                cmd = New SqlCommand(sql, con)
+            End If
+
+            'cmd.Connection = con
+
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim adp As New SqlDataAdapter(cmd)
+
+                adp.Fill(dt)
+                Return dt
+            Else
+                Return Nothing
+            End If
+        Catch ex As Exception
+
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+
+            desconectar()
+
+        End Try
+
+    End Function
 
     Public Function insertarCliente(dc As DCliente) As Boolean
 
         Try
             conectar()
 
-            Dim sql As String = "INSERT INTO CLIENTES(NOMBRES,NUM_ID,TELEFONO)VALUES('" & dc.NombresCliente & "','" &
-                dc.NumIdCliente & "', '" & dc.TelefonoCliente & "')"
+            Dim sql As String = "INSERT INTO dbo.clientes (Cliente,Telefono,Correo)VALUES('" & dc.cliente & "','" &
+                dc.telefono & "', '" & dc.correo & "')"
 
 
             cmd = New SqlCommand(sql, con)
 
             If cmd.ExecuteNonQuery() Then
-                MsgBox("El cliente se ha ingresado exitosamente")
                 Return True
 
             Else

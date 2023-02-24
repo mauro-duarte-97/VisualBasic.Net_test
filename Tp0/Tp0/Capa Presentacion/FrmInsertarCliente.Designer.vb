@@ -28,13 +28,13 @@ Partial Class FrmInsertarCliente
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtNombres = New System.Windows.Forms.TextBox()
-        Me.txtNumId = New System.Windows.Forms.TextBox()
+        Me.txtCorreo = New System.Windows.Forms.TextBox()
         Me.txtTel = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnInsertarCliente
         '
-        Me.btnInsertarCliente.Location = New System.Drawing.Point(257, 216)
+        Me.btnInsertarCliente.Location = New System.Drawing.Point(223, 216)
         Me.btnInsertarCliente.Name = "btnInsertarCliente"
         Me.btnInsertarCliente.Size = New System.Drawing.Size(113, 35)
         Me.btnInsertarCliente.TabIndex = 0
@@ -53,7 +53,7 @@ Partial Class FrmInsertarCliente
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(61, 44)
+        Me.Label2.Location = New System.Drawing.Point(48, 44)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(56, 15)
         Me.Label2.TabIndex = 2
@@ -62,16 +62,16 @@ Partial Class FrmInsertarCliente
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(61, 100)
+        Me.Label3.Location = New System.Drawing.Point(48, 158)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(142, 15)
+        Me.Label3.Size = New System.Drawing.Size(43, 15)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Numero de identificacion"
+        Me.Label3.Text = "Correo"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(65, 158)
+        Me.Label4.Location = New System.Drawing.Point(48, 100)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(52, 15)
         Me.Label4.TabIndex = 4
@@ -84,16 +84,16 @@ Partial Class FrmInsertarCliente
         Me.txtNombres.Size = New System.Drawing.Size(175, 23)
         Me.txtNombres.TabIndex = 5
         '
-        'txtNumId
+        'txtCorreo
         '
-        Me.txtNumId.Location = New System.Drawing.Point(223, 100)
-        Me.txtNumId.Name = "txtNumId"
-        Me.txtNumId.Size = New System.Drawing.Size(175, 23)
-        Me.txtNumId.TabIndex = 6
+        Me.txtCorreo.Location = New System.Drawing.Point(223, 158)
+        Me.txtCorreo.Name = "txtCorreo"
+        Me.txtCorreo.Size = New System.Drawing.Size(175, 23)
+        Me.txtCorreo.TabIndex = 6
         '
         'txtTel
         '
-        Me.txtTel.Location = New System.Drawing.Point(223, 158)
+        Me.txtTel.Location = New System.Drawing.Point(223, 100)
         Me.txtTel.Name = "txtTel"
         Me.txtTel.Size = New System.Drawing.Size(175, 23)
         Me.txtTel.TabIndex = 7
@@ -104,7 +104,7 @@ Partial Class FrmInsertarCliente
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(491, 263)
         Me.Controls.Add(Me.txtTel)
-        Me.Controls.Add(Me.txtNumId)
+        Me.Controls.Add(Me.txtCorreo)
         Me.Controls.Add(Me.txtNombres)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -124,6 +124,6 @@ Partial Class FrmInsertarCliente
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents txtNombres As TextBox
-    Friend WithEvents txtNumId As TextBox
+    Friend WithEvents txtCorreo As TextBox
     Friend WithEvents txtTel As TextBox
 End Class

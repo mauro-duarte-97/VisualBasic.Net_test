@@ -3,15 +3,12 @@ Imports System.Data.SqlClient
 
 Public Class Conexion
 
-    Protected con As New SqlConnection "Server=localhost,1433;Uid=sa;Pwd=!felgrand97;MultipleActiveResultSets=True;Timeout=120
-            ;Database=pruebademo;")
+    Protected con As New SqlConnection("Server=localhost,1433;Uid=sa;Pwd=!felgrand97;MultipleActiveResultSets=True;Timeout=120;Database=pruebademo;")
 
     Public Function conectar() As Boolean
 
         Try
             con.Open()
-
-            MsgBox("Conexion exitosa")
 
             Return True
         Catch ex As Exception

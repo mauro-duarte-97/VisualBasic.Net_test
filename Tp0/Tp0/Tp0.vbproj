@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms" Version="150.1358.0" />
-    <PackageReference Include="System.Data.OleDb" Version="7.0.0" />
+    <PackageReference Include="Confluent.Kafka" Version="2.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
   <ItemGroup>
