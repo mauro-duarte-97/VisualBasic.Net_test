@@ -9,7 +9,7 @@ Public Class Conexion
 
         Try
             con.Open()
-
+            MsgBox("Con exitosa")
             Return True
         Catch ex As Exception
 

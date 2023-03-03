@@ -2496,11 +2496,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daiana\\source\\repos\\TpTest\\TpTest\\TpTest.vbproj",
+      "projectUniqueName": "C:\\Users\\daiana\\Desktop\\Proyectos\\VisualBasic.Net_test\\TpTest\\TpTest.vbproj",
       "projectName": "TpTest",
-      "projectPath": "C:\\Users\\daiana\\source\\repos\\TpTest\\TpTest\\TpTest.vbproj",
+      "projectPath": "C:\\Users\\daiana\\Desktop\\Proyectos\\VisualBasic.Net_test\\TpTest\\TpTest.vbproj",
       "packagesPath": "C:\\Users\\daiana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daiana\\source\\repos\\TpTest\\TpTest\\obj\\",
+      "outputPath": "C:\\Users\\daiana\\Desktop\\Proyectos\\VisualBasic.Net_test\\TpTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

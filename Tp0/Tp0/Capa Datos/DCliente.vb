@@ -56,14 +56,16 @@ Public Class DCliente
 
     Public Function consultarCliente(ID As String, cte As String, tel As String, corr As String) As DataTable
         'SE FILTRARA DE A 1 POR CONVENIENCIA DE CODIGO
-        MsgBox(ID & cte & tel & corr)
 
         Try
-        conectar()
+            conectar()
             Dim sql As String
+            cmd.Connection = con
             If ID <> 0 Then
                 sql = "SELECT * FROM dbo.clientes WHERE ID ='" & ID & "'"
                 cmd = New SqlCommand(sql, con)
+                MsgBox(cmd)
+
             End If
 
             If cte <> " " Then
@@ -81,15 +83,15 @@ Public Class DCliente
                 cmd = New SqlCommand(sql, con)
             End If
 
-            'cmd.Connection = con
 
             If cmd.ExecuteNonQuery Then
                 Dim dt As New DataTable
                 Dim adp As New SqlDataAdapter(cmd)
-
                 adp.Fill(dt)
                 Return dt
             Else
+                MsgBox("Salio mal")
+
                 Return Nothing
             End If
         Catch ex As Exception

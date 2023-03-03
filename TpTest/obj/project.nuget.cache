@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "USbamebZmXSeQ6jmPOS7lNT1LuiJ+0/9YlmdR9R6/nph4kaLXV9voaSU1fj8geIukeVjBQEMvQAxVkYS+l3RdQ==",
+  "dgSpecHash": "+TkeZ4/9A/UGPzQ+Y2/ZrjBsw8m9l94KjjDdjtrZ8ruEwnjWjnGsnl1lkiFdlbxaJA9XDpcu/1zHaAb4Fg+0Rg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\daiana\\source\\repos\\TpTest\\TpTest\\TpTest.vbproj",
+  "projectFilePath": "C:\\Users\\daiana\\Desktop\\Proyectos\\VisualBasic.Net_test\\TpTest\\TpTest.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\daiana\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\daiana\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -4,7 +4,8 @@ Public Class LCliente
 
     Public Function insertarCliente(cte As String, correo As String, tel As String)
 
-        Dim dc As New DCliente(cte, correo, tel)
+        Dim dc As New DClientePrueba(cte, correo, tel)
+        'Dim dc As New DCliente(cte, correo, tel)
 
         If dc.insertarCliente(dc) = True Then
 
@@ -19,8 +20,10 @@ Public Class LCliente
 
     Public Function consultarCliente(ID As String, cte As String, tel As String, corr As String) As DataTable
         Try
-            Dim dc As New DCliente(cte, tel, corr)
+            'Dim dc As New DCliente
+            Dim dc As New DClientePrueba
             Dim dt As DataTable = dc.consultarCliente(ID, cte, tel, corr)
+            MsgBox("llego aca")
             Return dt
 
         Catch ex As Exception

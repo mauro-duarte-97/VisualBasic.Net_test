@@ -4,7 +4,8 @@
             Dim lc As New LCliente
 
             Dim dt As DataTable = lc.consultarCliente(txtID.Text, txtCte.Text, txtTel.Text, txtCorr.Text)
-
+            MsgBox(txtID)
+            MsgBox(dt)
             Dim dr As DataRow = dt.Rows.Item(0)
             MsgBox(dr.Item("Cliente") & " | " & dr.Item("Telefono") & " | " & dr.Item("Correo"), vbOKOnly, "Datos")
 
